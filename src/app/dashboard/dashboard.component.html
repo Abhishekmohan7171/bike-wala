@@ -1,0 +1,266 @@
+<div class="" id="page-wrapper">
+    <div class="container-fluid">
+        <div class="row row-stat">
+            <div class="col-sm-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading panel-heading-divider"><i> Custom service </i></div>
+                    <div class="panel-body">
+                        <div class="xs-mt-10 xs-mb-10  ">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <!-- form start -->
+                                    <form #CustomService = "ngForm" (ngSubmit)="customservice1(CustomService)" class="form-horizontal">
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <label class="col-sm-3 control-label" for="form-control-11">Brand Name</label>
+                                                <div class="col-sm-9">
+                                                    <input id="form-control-11" class="form-control" type="text" name="BrandName" ngModel>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <label class="col-sm-3 control-label" for="form-control2">Chassis No</label>
+                                                <div class="col-sm-9">
+                                                    <input id="form-control-12" class="form-control" type="text" name="ChassisNo" ngModel>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <label class="col-sm-3 control-label" for="form-control-13"> Model </label>
+                                                <div class="col-sm-9">
+                                                    <input id="form-control-13" class="form-control" type="text" name=" ModelName " ngModel>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <label class="col-sm-3 control-label" for="form-control-14"> Reg_no</label>
+                                                <div class="col-sm-9">
+                                                    <input id="form-control-14" class="form-control" type="text" name=" Reg_no " ngModel>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <label class="col-xl-3 control-label" for="form-control-9"><b> the service
+                                                    you need: </b> </label>
+                                                <div class="col-xl-9">
+
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox" name="suspension" checked="checked" name=" Custom_Service " ngModel>
+                                                            Custom Service
+                                                            <br>  <br>
+                                                            <!-- <input type="checkbox" name="clutch and transmission"
+                                                                checked="checked"> clutch and transmission
+                                                            <br>  <br>
+                                                            <input type="checkbox" name="perfomance  upgrading"
+                                                                checked="checked"> perfomance upgrading
+                                                            <br>  <br>
+                                                            <input type="checkbox" name="exterior disign"
+                                                                checked="checked"> exterior disign
+                                                            <br>  <br>
+                                                            <input type="checkbox" name="electrical work"
+                                                                checked="checked"> electrical work
+                                                            <br>  <br>
+                                                            <input type="checkbox" name="engine" checked="checked">
+                                                            engine -->
+                                                        </label>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+                                    
+
+
+                                        <div class="button">
+                                            <button (click)="clickMe()">Submit</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="" id="page-wrapper">
+    <div class="container-fluid">
+        <div class="row row-stat">
+            <div class="col-sm-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading panel-heading-divider"><i> periodic service </i></div>
+                    <div class="panel-body">
+                        <div class="xs-mt-10 xs-mb-10  ">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <!-- form starts -->
+                                    <form #PeriodicService = "ngForm" (ngSubmit)="periodicservice1(PeriodicService)" class="form-horizontal">
+
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <label class="col-sm-3 control-label" for="form-control-11">Brand Name</label>
+                                                <div class="col-sm-9">
+                                                    <input id="form-control-11" class="form-control" type="text" name="BrandName" ngModel>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <label class="col-sm-3 control-label" for="form-control2">Chassis No</label>
+                                                <div class="col-sm-9">
+                                                    <input id="form-control-12" class="form-control" type="text" name="ChassisNo" ngModel>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <label class="col-sm-3 control-label" for="form-control-13"> Model </label>
+                                                <div class="col-sm-9">
+                                                    <input id="form-control-13" class="form-control" type="text" name="Model_Name" ngModel>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <label class="col-sm-3 control-label" for="form-control-14"> Reg_no</label>
+                                                <div class="col-sm-9">
+                                                    <input id="form-control-14" class="form-control" type="text" name="RegNo" ngModel>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <label class="col-xl-3 control-label" for="form-control-9"> <b> the service
+                                                    you need:</b> </label>
+                                                <div class="col-xl-9">
+
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox" checked="checked" name="PeriodicService" ngModel> Periodic Service 
+                                                            <br><br>
+                                                            <!-- <input type="checkbox" name="Basic_service"
+                                                                checked="checked"> Basic service
+                                                            <br><br>
+                                                            <input type="checkbox" name="Standerd_services"
+                                                                checked="checked"> Standerd_services -->
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="button">
+                                                <button (click)="clickMe()">Submit</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="" id="page-wrapper">
+    <div class="container-fluid">
+        <div class="row row-stat">
+            <div class="col-sm-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading panel-heading-divider"><i> Painting and Washing </i></div>
+                    <div class="panel-body">
+                        <div class="xs-mt-10 xs-mb-10  ">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <!-- form starts -->
+                                    <form #PaintingAndWashing="ngForm" (ngSubmit)="painting_and_washing(PaintingAndWashing)" class="form-horizontal">
+
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <label class="col-sm-3 control-label" for="form-control-21">Brand Name</label>
+                                                <div class="col-sm-9">
+                                                    <input id="form-control-21" class="form-control" type="text" name="BrandName2" ngModel>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <label class="col-sm-3 control-label" for="form-contro22">Chassis No</label>
+                                                <div class="col-sm-9">
+                                                    <input id="form-control-22" class="form-control" type="text" name="ChassisNo2" ngModel>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <label class="col-sm-3 control-label" for="form-control-23"> Model </label>
+                                                <div class="col-sm-9">
+                                                    <input id="form-control-23" class="form-control" type="text" name="ModelName2" ngModel>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <label class="col-sm-3 control-label" for="form-control-24"> Reg_no</label>
+                                                <div class="col-sm-9">
+                                                    <input id="form-control-24" class="form-control" type="text" name="RegNo2" ngModel>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <label class="col-xl-3 control-label" for="form-control-9"> <b> the service
+                                                    you need:</b> </label>
+                                                <div class="col-xl-9">
+
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox" name="Painting" checked="checked" name="WaterWash" ngModel> Water Wash
+                                                            <br><br>
+                                                            <!-- <input type="checkbox" name="Air-wash"
+                                                                checked="checked"> Air-wash 
+                                                            <br><br>
+                                                            <input type="checkbox" name="Water-wash"
+                                                                checked="checked"> Water-wash -->
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="button">
+                                                <button (click)="clickMe()">Submit</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
