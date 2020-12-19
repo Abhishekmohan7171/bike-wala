@@ -6,4 +6,4 @@
 
 
 
-Made with :heart: by .Abhishek Mohan and Jerome Samson
+Made with :heart: by Abhishek Mohan and Jerome Samson
